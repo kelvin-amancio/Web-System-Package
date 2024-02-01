@@ -20,8 +20,11 @@ jobs:
     - name: Build with dotnet
       run: dotnet build --configuration Release
 
+    - name: Test Package
+      run: dotnet test
+
     - name: Create WebSystem Package
       run: dotnet pack --configuration Release
 
     - name: Publish
-      run: dotnet nuget push "WebSystem.Core/bin/Release/*.nupkg" -k ${{ secrets.NUGET_TOKEN }} -s https://api.nuget.org/v1/index.json --skip-duplicate
+      run: dotnet nuget push "WebSystem.Core/bin/Release/*.nupkg" -k ${{ secrets.NUGET_TOKEN }} -s https://api.nuget.org/websystem/v1/index.json --skip-duplicate
