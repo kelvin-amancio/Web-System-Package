@@ -1,9 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  
+	<PackageId>WebSystem</PackageId>
+	<Version>1.0.1</Version>
+	<License>MIT</License>
+	<Authors>Kelvin de Almeida Amancio</Authors>
+	<Company>WebSystem</Company>
+	<PackageDescription>Extensions and string helpers to save time</PackageDescription>
+    <Description>Extensions and string helpers to save time</Description>
+	<RepositoryUrl>https://github.com/kelvin-amancio/Web-System-Package</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/kelvin-amancio/Web-System-Package</PackageProjectUrl>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<PackageIcon>icon.jpg</PackageIcon>
+	<PackageTags>strings;helper;extensions;datetime</PackageTags>
+	<Title>WebSystem</Title>
+	<Summary>&gt;Extensions and string helpers to save time</Summary>
   </PropertyGroup>
+
+	<ItemGroup>
+		<None Include=".\Media\icon.jpg" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 </Project>
