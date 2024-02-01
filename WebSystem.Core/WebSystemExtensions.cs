@@ -5,7 +5,7 @@ namespace WebSystem.Core
 {
     public static class WebSystemExtensions
     {
-        public static string? FormatDocument(this string? document, int typeDocument)
+        public static string? FormatDocument(this string? document, int typeDocument = 1)
         {
             if (string.IsNullOrEmpty(document))
                 return null;
@@ -97,7 +97,7 @@ namespace WebSystem.Core
             return dateTime.AddHours(zone.BaseUtcOffset.Hours);
         }
 
-        public static string? FormattingDate(this DateTime dateTime, int? typeFormat)
+        public static string? FormattingDate(this DateTime dateTime, int? typeFormat = 1)
         {
             TimeZoneInfo zone = TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time");
             var dateUtc = dateTime.AddHours(zone.BaseUtcOffset.Hours);

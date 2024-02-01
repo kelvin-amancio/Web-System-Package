@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 	  
 	<PackageId>WebSystem</PackageId>
-	<Version>1.0.1</Version>
+	<Version>1.0.2</Version>
 	<License>MIT</License>
 	<Authors>Kelvin de Almeida Amancio</Authors>
 	<Company>WebSystem</Company>
