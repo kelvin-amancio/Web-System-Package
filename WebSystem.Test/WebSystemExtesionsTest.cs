@@ -9,5 +9,6 @@ namespace WebSystem.Test
             var value = "Testing-@-";
             var ca = WebSystemStringHelper.ClearCharacters(value,'-', '@');
         }
+
     }
 }
