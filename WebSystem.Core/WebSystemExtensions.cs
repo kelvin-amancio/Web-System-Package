@@ -128,27 +128,27 @@ namespace WebSystem.Core
         }
         public static Tuple<DateTime?, DateTime?> ToTransformDates(this string? dateRange)
         {
-            DateTime? dhStart = null;
-            DateTime? dhEnd = null;
+            DateTime? dtStart = null;
+            DateTime? dtEnd = null;
 
             var splitDate = dateRange?.Split('-');
             if (splitDate == null)
-                return new Tuple<DateTime?, DateTime?>(dhStart, dhEnd);
+                return new Tuple<DateTime?, DateTime?>(dtStart, dtEnd);
 
             if (splitDate.Length == 0)
-                return new Tuple<DateTime?, DateTime?>(dhStart, dhEnd);
+                return new Tuple<DateTime?, DateTime?>(dtStart, dtEnd);
 
             if (splitDate.Length == 2)
             {
-                DateTime.TryParseExact(splitDate[0]?.Trim(), "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal, out DateTime dhStartResult);
-                DateTime.TryParseExact(splitDate[1]?.Trim(), "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal, out DateTime dhEndResult);
-                dhStart = dhStartResult;
-                dhEnd = dhEndResult;
+                DateTime.TryParseExact(splitDate[0]?.Trim(), "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal, out DateTime dtStartResult);
+                DateTime.TryParseExact(splitDate[1]?.Trim(), "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.AdjustToUniversal, out DateTime dtEndResult);
+                dtStart = dtStartResult;
+                dtEnd = dtEndResult;
 
-                return new Tuple<DateTime?, DateTime?>(dhStart, dhEnd);
+                return new Tuple<DateTime?, DateTime?>(dtStart, dtEnd);
             }
 
-            return new Tuple<DateTime?, DateTime?>(dhStart, dhEnd);
+            return new Tuple<DateTime?, DateTime?>(dtStart, dtEnd);
         }
 
 

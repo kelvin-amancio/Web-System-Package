@@ -27,4 +27,4 @@ jobs:
       run: dotnet pack --configuration Release
 
     - name: Publish
-      run: dotnet nuget push "WebSystem.Core/bin/Release/WebSystem.1.0.3.nupkg" -k ${{ secrets.NUGET_TOKEN }} -s https://api.nuget.org/v3/index.json --skip-duplicate
+      run: dotnet nuget push "WebSystem.Core/bin/Release/WebSystem.1.0.4.nupkg" -k ${{ secrets.NUGET_TOKEN }} -s https://api.nuget.org/v3/index.json --skip-duplicate
