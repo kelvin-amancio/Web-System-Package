@@ -11,7 +11,7 @@
 	<Authors>Kelvin de Almeida Amancio</Authors>
 	<Company>WebSystem</Company>
 	<PackageDescription>Extensions and string helpers to save time</PackageDescription>
-    <Description>Extensions, String Helpers, DateTime configures, ResultsView.To save time!</Description>
+    <Description>Extensions, String Helpers, DateTime configuration and ResultsView.To save time!</Description>
 	<RepositoryUrl>https://github.com/kelvin-amancio/Web-System-Package</RepositoryUrl>
 	<PackageProjectUrl>https://github.com/kelvin-amancio/Web-System-Package</PackageProjectUrl>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
