@@ -10,15 +10,15 @@
 	<License>MIT</License>
 	<Authors>Kelvin de Almeida Amancio</Authors>
 	<Company>WebSystem</Company>
-	<PackageDescription>Extensions and string helpers to save time</PackageDescription>
-    <Description>Extensions, String Helpers, DateTime configuration and ResultsView.To save time!</Description>
+	<PackageDescription>Extensions and string helpers to save time and work</PackageDescription>
+    <Description>Extensions, String Helpers, DateTime configuration and ResultsView.To save time and work!</Description>
 	<RepositoryUrl>https://github.com/kelvin-amancio/Web-System-Package</RepositoryUrl>
 	<PackageProjectUrl>https://github.com/kelvin-amancio/Web-System-Package</PackageProjectUrl>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<PackageIcon>icon.jpg</PackageIcon>
 	<PackageTags>strings;helper;extensions;datetime</PackageTags>
 	<Title>WebSystem</Title>
-	<Summary>&gt;Extensions and string helpers to save time</Summary>
+	<Summary>&gt;Extensions and string helpers to save time and work</Summary>
   </PropertyGroup>
 
 	<ItemGroup>
