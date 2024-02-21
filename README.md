@@ -26,7 +26,7 @@ Este pacote está disponível através de Pacotes Nuget: https://www.nuget.org/p
 ```
 
 
-## Autores
+## Autore
 
 - [@KelvinAmancio](https://github.com/kelvin-amancio)
 
