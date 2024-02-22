@@ -6,7 +6,7 @@ O WebSystem é uma biblioteca .NET que visa simplificar tarefas comuns durante o
 
 | Package   | Version       | Downloads                           |
 | :---------- | :--------- | :---------------------------------- |
-| `WebSystem` | `1.0.5` | `247` |
+| `WebSystem` | `1.0.5` | `250` |
 
 
 
