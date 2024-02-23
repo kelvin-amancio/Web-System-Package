@@ -6,7 +6,7 @@ O WebSystem é uma biblioteca .NET que visa simplificar tarefas comuns durante o
 
 | Package   | Version       | Downloads                           |
 | :---------- | :--------- | :---------------------------------- |
-| `WebSystem` | `1.0.5` | `250` |
+| `WebSystem` | `1.0.5` | `251` |
 
 
 
@@ -26,7 +26,7 @@ Este pacote está disponível através de Pacotes Nuget: https://www.nuget.org/p
 ```
 
 
-## Autore
+## Autor
 
 - [@KelvinAmancio](https://github.com/kelvin-amancio)
 
