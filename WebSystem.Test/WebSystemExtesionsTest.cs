@@ -7,7 +7,13 @@ namespace WebSystem.Test
         [TestMethod]
         public void ShouldGenarateToken()
         {
-            WebSystemToken.GenerateToken("5+IVE2SDIJCF12(@#$!W2@&%3saw123tp!", DateTime.UtcNow.AddHours(3));
+            var wso = new WebSystemObject
+            {
+                Name = "Kelvin",
+                Email = "kelvin@gmail.com"
+            };
+
+             WebSystemToken.GenerateToken(wso,"5+IVE2SDIJCF12(@#$!W2@&%3saw123tp!", DateTime.UtcNow.AddHours(2));
         }
 
     }

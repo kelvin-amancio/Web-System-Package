@@ -22,7 +22,7 @@ namespace WebSystem.Core
             return tokenHandler.WriteToken(token);
         }
 
-        public string GenerateToken(WebSystemObject webSystemObject, string jwtKey, DateTime expires)
+        public static string GenerateToken(WebSystemObject webSystemObject, string jwtKey, DateTime expires)
         {
             var tokenHandle = new JwtSecurityTokenHandler();
             var key = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtKey));
@@ -46,10 +46,13 @@ namespace WebSystem.Core
                 ci.AddClaim(new Claim("id", webSystemObject.Id.ToString()!));
 
             if (!string.IsNullOrEmpty(webSystemObject.Name))
+            {
                 ci.AddClaim(new Claim(ClaimTypes.Name, webSystemObject.Name));
+                ci.AddClaim(new Claim(ClaimTypes.GivenName, webSystemObject.Name));
+            }
 
             if (!string.IsNullOrEmpty(webSystemObject.Email))
-                ci.AddClaim(new Claim(ClaimTypes.Name, webSystemObject.Email));
+                ci.AddClaim(new Claim(ClaimTypes.Email, webSystemObject.Email));
 
             if (!string.IsNullOrEmpty(webSystemObject.Description))
                 ci.AddClaim(new Claim("description", webSystemObject.Description));
