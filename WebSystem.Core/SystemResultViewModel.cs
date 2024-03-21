@@ -7,12 +7,18 @@ namespace WebSystem.Core
             Data = data;
             Errors = errors;
         }
+        public SystemResultViewModel(T data, string error)
+        {
+            Data = data;
+            Errors.Add(error);
+        }
+
         public SystemResultViewModel(T data) => Data = data;
         public SystemResultViewModel(List<string> errors) => Errors = errors;
         public SystemResultViewModel(string error) => Errors.Add(error);
-        public SystemResultViewModel(){}
+        public SystemResultViewModel() { }
 
-        public T Data { get; private set; }  
+        public T Data { get; private set; }
         public List<string> Errors { get; private set; } = new();
     }
 }
