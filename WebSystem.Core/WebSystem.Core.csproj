@@ -6,19 +6,19 @@
     <Nullable>enable</Nullable>
 	  
 	<PackageId>WebSystem</PackageId>
-	<Version>1.0.4</Version>
+	<Version>1.0.5</Version>
 	<License>MIT</License>
 	<Authors>Kelvin de Almeida Amancio</Authors>
 	<Company>WebSystem</Company>
-	<PackageDescription>Extensions, String Helpers, DateTime configuration and ResultsView. To save time and work</PackageDescription>
-    <Description>Extensions, String Helpers, DateTime configuration and ResultsView. To save time and work!</Description>
+	<PackageDescription>Extensions, String Helpers, DateTime configuration, Components Razor and ResultsView. To save time and work</PackageDescription>
+    <Description>Extensions, String Helpers, DateTime configuration, Components Razor and ResultsView. To save time and work!</Description>
 	<RepositoryUrl>https://github.com/kelvin-amancio/Web-System-Package</RepositoryUrl>
 	<PackageProjectUrl>https://github.com/kelvin-amancio/Web-System-Package</PackageProjectUrl>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<PackageIcon>icon.jpg</PackageIcon>
 	<PackageTags>strings;helper;extensions;datetime</PackageTags>
 	<Title>WebSystem</Title>
-	<Summary>&gt;Extensions, String Helpers, DateTime configuration and ResultsView. To save time and work</Summary>
+	<Summary>&gt;Extensions, String Helpers, DateTime configuration, Components Razor and ResultsView. To save time and work</Summary>
   </PropertyGroup>
 
 	<ItemGroup>
@@ -26,6 +26,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.17" />
 	  <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions" Version="2.2.0" />
 	  <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
 	</ItemGroup>
