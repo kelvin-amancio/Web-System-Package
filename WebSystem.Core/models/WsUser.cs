@@ -1,7 +1,7 @@
 
-namespace WebSystem.Core
+namespace WebSystem.Core.models
 {
-    public class WebSystemObject
+    public class WsUser
     {
         public int? Id { get; set; }
         public string? Name { get; set; }
