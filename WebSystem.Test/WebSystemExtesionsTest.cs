@@ -1,13 +1,13 @@
+
 namespace WebSystem.Test
 {
     [TestClass]
     public class WebSystemExtesionsTest
     {
         [TestMethod]
-        public void ShouldClearCharacters()
+        public void ShouldGenarateToken()
         {
-            var value = "Testing-@-";
-            var ca = WebSystemStringHelper.ClearCharacters(value,'-', '@');
+            WebSystemToken.GenerateToken("5+IVE2SDIJCF12(@#$!W2@&%3saw123tp!", DateTime.UtcNow.AddHours(3));
         }
 
     }
