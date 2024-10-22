@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	  
 	<PackageId>WebSystem</PackageId>
-	<Version>1.0.7</Version>
+	<Version>1.0.8</Version>
 	<License>MIT</License>
 	<Authors>Kelvin de Almeida Amancio</Authors>
 	<Company>WebSystem</Company>
@@ -26,7 +26,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.17" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
 	  <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions" Version="2.2.0" />
 	  <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
 	</ItemGroup>

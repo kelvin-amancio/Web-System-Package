@@ -1,4 +1,6 @@
 
+using WebSystem.Core.models;
+
 namespace WebSystem.Test
 {
     [TestClass]
@@ -7,7 +9,7 @@ namespace WebSystem.Test
         [TestMethod]
         public void ShouldGenarateToken()
         {
-            var wso = new WebSystemObject
+            var wso = new WsUser
             {
                 Name = "Kelvin",
                 Email = "kelvin@gmail.com"
